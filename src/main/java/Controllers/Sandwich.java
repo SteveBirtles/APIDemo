@@ -52,6 +52,8 @@ public class Sandwich {
     @Produces(MediaType.APPLICATION_JSON)
     public String insertSandwich(@FormDataParam("id") int id, @FormDataParam("name") String name, @FormDataParam("layers") int layers) {
 
+        System.out.println("sandwich/new");
+
         try {
 
             PreparedStatement ps = Main.db.prepareStatement(
@@ -77,6 +79,8 @@ public class Sandwich {
     @Produces(MediaType.APPLICATION_JSON)
     public String updateSandwich(@FormDataParam("id") int id, @FormDataParam("name") String name, @FormDataParam("layers") int layers) {
 
+        System.out.println("sandwich/update");
+
         try {
 
             PreparedStatement ps = Main.db.prepareStatement(
@@ -101,6 +105,8 @@ public class Sandwich {
     @Consumes(MediaType.MULTIPART_FORM_DATA)
     @Produces(MediaType.APPLICATION_JSON)
     public String deleteSandwich(@FormDataParam("id") int id) {
+
+        System.out.println("sandwich/delete");
 
         try {
 

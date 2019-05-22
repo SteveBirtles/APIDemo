@@ -8,6 +8,11 @@
     <artifactId>APIDemo</artifactId>
     <version>1</version>
 
+    <properties>
+        <maven.compiler.target>12</maven.compiler.target>
+        <maven.compiler.source>12</maven.compiler.source>
+    </properties>
+
     <dependencies>
 
         <!-- SQLite -->
@@ -31,13 +36,25 @@
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-server</artifactId>
-            <version>9.4.15.v20190215</version>
+            <version>9.4.18.v20190429</version>
         </dependency>
 
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-servlet</artifactId>
-            <version>9.4.15.v20190215</version>
+            <version>9.4.18.v20190429</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-io</artifactId>
+            <version>9.4.18.v20190429</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-util</artifactId>
+            <version>9.4.18.v20190429</version>
         </dependency>
 
         <!-- Jersey -->
